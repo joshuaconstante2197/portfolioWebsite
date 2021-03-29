@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+    <body>
+      <header class="header">
+        <div class="logo">
+          <img src="/lib/images/logo.PNG" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburguer"></span>
+        </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+              <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+          </nav>
+      </header>
+      <!-- Introduction -->
+
+      <section class ="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Video-Game Shop <strong>Web App</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">MVC web application to manage a shop</p>
+        <img src="/lib/images/videogame-shop-detail-top.PNG" alt="a picture of the video game shop project" class="intro__img">
+      </section>
+    <section class="my--work" id="work">
+      <div class="portfolio-item-individual">
+        <p>This app is capable of receiving inventory and sales from a CSV file or add them manualy. It also has login capabilities with support for two roles, Manager and Employee.</p>
+          
+        
+          <!--Portfolio Item 01-->
+          <div class="portfolio">
+            <a href="https://github.com/joshuaconstante2197/VideogameShop" class="portfolio__item">
+              <i class="fab fa-github-square portfolio__item--git"></i>
+              <img src="/lib//images/videogame-shop project.png" alt="" class="portfolio__img">
+            </a>
+          </div>
+        </section>
+      <div class="portfolio-item-individual">
+
+        <p>The app was thought out as if it was to be used by employees at a physical store to manage sells and inventory, as such sales can be logged by credit card or cash.</p>
+        </p> The CSV file is parsed and saved to a SQL server database, the credit cards are first verified using Luhn's algorythm. Credit cards are encrypted and only the last 4 numbers are displayed.</p>
+        <p>It is also posible to add products or the sales manualy.</p> 
+        <p>The app supports two roles.</p>
+        <ul>
+          <li>
+            <strong>Manager:</strong>
+            <p>Has full acces and can edit or delete sales and items from inventory either manually or by uploading a CSV file.</p>
+            <p>Can add or delete user as well as assing roles.</p>
+            </li>
+          <li><strong>Employee:</strong><p>Is only able to add sales and items to the inventory manually.</p></li>
+        </ul>
+        <p>The app keeps track of quantities on inventory and it will notify the user trough color coding if it is necessary to restock.</p>
+      </div>
+    </section>
+     
+
+      <!--Footer-->
+      <footer class="footer">
+        <a href="mailto:joshua.co.dev@gmail.com" class="footer__link">joshua.co.dev@gmail.com</a>
+          <ul class="social--list">
+            <li class="social--list__item"><a class="social--list__link" href="https://github.com/joshuaconstante2197/"><i class="fab fa-github"></i></a></li>
+            <li class="social--list__item"><a class="social--list__link" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </footer>
+
+    <script src="/js/index.js" ></script>
+      
+    </body>
+</html> 
