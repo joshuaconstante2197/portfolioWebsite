@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="/js/contact.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+    <body>
+      <header class="header">
+        <div class="logo">
+          <a href="index.html"><img src="/lib/images/logo.PNG" alt=""></a> 
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburguer"></span>
+        </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+              <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+              <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+          </nav>
+      </header>
+      <!-- Contact me form -->
+      <section class="contact">
+        <h2 class="section__title--contact">Contact me</h2>
+        <form class="contact__form" action="https://formspree.io/f/xpzkagyl" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Full Name" class="section__input--contact--name name">
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="_replyto" placeholder="example@email.com" class="section__input--contact--email email">
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Subject Line" class="section__input--contact--subject subject">
+          </label>
+          <label>
+            Message
+            <textarea name="message" class="section__input--contact--message message"></textarea>
+          </label>
+          <div class="status"></div>
+          <button type="submit" class="btn btn-submit">Send</button>
+        </form>
+      </section>
+      <div class ="push"></div>
+      <!--Footer-->
+      <footer class="footer">
+        <a href="mailto:joshua.co.dev@gmail.com" class="footer__link">joshua.co.dev@gmail.com</a>
+          <ul class="social--list">
+            <li class="social--list__item"><a class="social--list__link" href="https://github.com/joshuaconstante2197"><i class="fab fa-github"></i></a></li>
+            <li class="social--list__item"><a class="social--list__link" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </footer>
+    
+    <script src="/js/index.js" ></script>
+      
+    </body>
+</html> 

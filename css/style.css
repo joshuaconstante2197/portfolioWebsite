@@ -35,9 +35,14 @@
 
 /*General styles*/
 html{
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 body{
+  min-height:100%; 
+  position:relative; 
+  padding-bottom:7em; 
   background: var(--clr-light);
   color: var(--clr-dark);
   margin:0;
@@ -231,9 +236,10 @@ h3{
     width: min-content;
     margin: 0 auto;
     grid-column-gap: 1em;
-    grid-template-areas: 
+    grid-template-areas:
             "img title"
-            "img subtitle";
+            "img subtitle"
+            ;
     grid-template-columns: min-content max-content;
     padding-bottom: 2em;
   }
@@ -398,6 +404,11 @@ h3{
 /* Footer */
 
 .footer{
+  position: absolute; 
+  left: 0 ; 
+  right: 0; 
+  bottom: 0; 
+  height: 6em;
   background: #111;
   color:var(--clr-accent);
   text-align: center;
@@ -441,3 +452,40 @@ h3{
   margin: 0 auto;
 }
 
+/* Contact form */
+.contact{
+  position: relative;
+}
+.contact__form input,
+.contact__form label,
+.contact__form textarea{
+  display: block;
+}
+.contact__form textarea{
+  height: 4em;
+} 
+.contact__form input,
+.contact__form textarea{
+  width: 250px;
+}
+
+@media (min-width:600px){
+  .contact{
+    display:grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+            "title form"
+            ;
+    grid-template-columns: min-content max-content;
+    padding-bottom: 2em;
+  }
+  .section__title--contact{
+    position: relative;
+    top: 25%;
+  }
+  .contact__form{
+    grid-area: form;
+  }
+}
