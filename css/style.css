@@ -489,3 +489,9 @@ h3{
     grid-area: form;
   }
 }
+@media (max-width:599px){
+  .contact{
+    display: block;
+    padding-left: 25%;
+  }
+}
