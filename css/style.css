@@ -452,46 +452,4 @@ h3{
   margin: 0 auto;
 }
 
-/* Contact form */
-.contact{
-  position: relative;
-}
-.contact__form input,
-.contact__form label,
-.contact__form textarea{
-  display: block;
-}
-.contact__form textarea{
-  height: 4em;
-} 
-.contact__form input,
-.contact__form textarea{
-  width: 250px;
-}
 
-@media (min-width:600px){
-  .contact{
-    display:grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:
-            "title form"
-            ;
-    grid-template-columns: min-content max-content;
-    padding-bottom: 2em;
-  }
-  .section__title--contact{
-    position: relative;
-    top: 25%;
-  }
-  .contact__form{
-    grid-area: form;
-  }
-}
-@media (max-width:599px){
-  .contact{
-    display: block;
-    padding-left: 25%;
-  }
-}
