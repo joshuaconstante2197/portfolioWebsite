@@ -53,6 +53,7 @@ body{
 img{
   display: block;
   max-width: 100%;
+  border-radius: 3%;
 }
 :focus{
   outline: 3px solid var(--clr-accent);
@@ -275,6 +276,9 @@ h3{
   color:var(--clr-accent);
   position: relative;
 }
+.section__subtitle--services{
+  color: var(--clr-accent)
+}
 
 .section__title--services::after{
   content: '';
@@ -293,10 +297,11 @@ h3{
 @media (min-width: 800px){
   .services{
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .service + .service {
+    max-width: 400px;
     margin-left: 2em;
   }
 }
@@ -350,35 +355,42 @@ h3{
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+
 }
 .section__subtitle--my--work{
   color: var(--clr-accent);
 }
 .portfolio{
-  padding-top: 1em;
   display: grid;
   margin: 0 auto;
-  max-width: 800px;
+  padding: 1.2em;
+  grid-row-gap: 20px;
+  max-width: 1000px;
+  overflow: hidden;
+
 }
 
 .portfolio__item{
+  overflow: hidden;
   position: relative;
-  margin-bottom: 1.1em;
+  border-radius: 1em;
   text-decoration: none;
+  max-height: 35rem;
   color: transparent;
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+
 }
 .portfolio__img{
   align-self: start;
+  margin: 0;
   position: relative;
 }
 .portfolio__item--git,
 .portfolio__item--description{
   font-weight: var(--fw-bold);
-  margin: 0;
-  padding: 1em 0;
+  margin: 1em 0;
   width: 8em;
   position: absolute;
   text-align: center;
@@ -389,13 +401,13 @@ h3{
 .portfolio__item--git{
   font-size: var(--fs-h1);
 }
-
-
+.portfolio__item:focus,
 .portfolio__item:hover{
+  overflow: hidden;
   background-color: var(--clr-dark);
   background-blend-mode: multiply;
   color: var(--clr-dark);
-  transform: scale(1.1);
+  transform: scale(1.05) ;
 }
 
 .portfolio__img:hover{
