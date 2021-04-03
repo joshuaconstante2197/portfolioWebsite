@@ -155,8 +155,7 @@ h3{
   .header{
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  background-color: var(--clr-light);
+  background-color:transparent;
 }
 .logo{
   max-width: 170px;
