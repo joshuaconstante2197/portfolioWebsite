@@ -100,31 +100,7 @@ h3{
   font-size: var(--fs-h3);
 }
 
-.section__title{
- margin-bottom: .25em;
-}
-.section__title--intro{
-  font-weight: var(--fw-reg);
-}
-.section__title--intro strong{
-  display: block;
-}
-.section__subtitle{
-  margin:0;
-  font-size: var(--fs-h3);
-}
-.section__subtitle--intro,
-.section__subtitle--about{
-  background: var(--clr-accent);
-  padding: .25em 1em;
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
-}
-.section__subtitle--work{
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
+
 
 /* header */
 .header{
@@ -283,6 +259,35 @@ h3{
 .intro__img{
   box-shadow: var(--bs);
 }
+.section__title{
+ margin-bottom: .25em;
+}
+.section__title--intro{
+  font-weight: var(--fw-reg);
+}
+.section__title--length{
+  color: transparent;
+}
+.section__title--intro strong{
+  display: block;
+}
+.section__subtitle{
+  margin:0;
+  font-size: var(--fs-h3);
+}
+.section__subtitle--intro,
+.section__subtitle--about{
+  background: var(--clr-accent);
+  padding: .25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+.section__subtitle--work{
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
 .section__subtitle--intro{
   display: inline-block;
 }
@@ -422,7 +427,6 @@ h3{
   grid-row-gap: 20px;
   max-width: 1000px;
   overflow: hidden;
-
 }
 
 .portfolio__item{
@@ -442,7 +446,7 @@ h3{
   margin: 0;
   position: relative;
 }
-.portfolio__item--git,
+
 .portfolio__item--description{
   font-weight: var(--fw-bold);
   margin: 1em 0;
@@ -453,9 +457,45 @@ h3{
   left: calc(50% - 4em);
   z-index: 2;
 }
-.portfolio__item--git{
-  font-size: var(--fs-h1);
+.portfolio__item--div{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  color: transparent;
 }
+.portfolio__item--div i{
+  color: transparent;
+  transition: transform 750ms cubic-bezier(.3, 0, .3, 1);
+}
+.portfolio__item--div:hover i{
+  color: var(--clr-dark);
+}
+.portfolio__item--div:hover{
+  background-color: rgba(48, 48, 48, .15);
+}
+.portfolio__item--icons{
+  position: relative;
+  width:50%;
+}
+.portfolio__item--link {
+  width: 100%;
+  height: 100%;
+
+}
+.portfolio__item--icon{
+  position: relative;
+  font-size: var(--fs-h1);
+  padding: 45%;
+}
+.portfolio__item--icon:hover{
+  transform: scale(1.2);
+}
+
+
 .portfolio__item:focus,
 .portfolio__item:hover{
   overflow: hidden;

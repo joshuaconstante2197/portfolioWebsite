@@ -29,59 +29,63 @@
             </ul>
           </nav>
       </header>
-      <!-- Introduction -->
+       <!-- Introduction -->
 
       <section class ="intro" id="home">
         <h1 class="section__title section__title--intro">
-          Video-Game Shop <strong>Web App</strong>
+          Collections<span class="section__title--length">...............</span> <strong>Web App</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">MVC web application to manage a shop</p>
-        <img src="/lib/images/videogame-shop-detail-top.PNG" alt="a picture of the video game shop project" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">Razor pages app to automate data processing.</p>
+        <img src="/lib/images/collections-app-project-detail.png" alt="a picture of the piano app project project" class="intro__img">
       </section>
     <section class="my--work" id="work">
+
+      
+
+
       <div class="portfolio-item-individual">
-        <p>This app is capable of receiving inventory and sales from a CSV file or add them manualy. It also has login capabilities with support for two roles, Manager and Employee.</p>
+        <p>This app parses an RPT file into a SQL server database in order to manage pendings accounts to collect.</p>
           
         
           <!--Portfolio Item 01-->
-
           <div class="portfolio">
             <div class="portfolio__item">
               <div class="portfolio__item--div">
                 <div class="portfolio__item--icons">
-                  <a href="https://github.com/joshuaconstante2197/VideogameShop" >
+                  <a href="https://github.com/joshuaconstante2197/RptFileApp" >
                     <i class="fab fa-github-square portfolio__item--icon" aria-hidden="true"></i>
                   </a>
                 </div>
-                
               </div>
-                <img src="/lib/images/videogame-shop project.png" alt="" class="portfolio__img">
+                <img src="/lib/images/collections-app project.png" alt="" class="portfolio__img">
             </div>
           </div>
-          <p>Live version comming soon</p>
-
+          <p>Life version coming soon.</p>
         </section>
 
-          
 
       <div class="portfolio-item-individual">
 
-        </p>A CSV file can be used to update the database, when the file is uploaded it is parsed and saved to a SQL server database, the credit cards are first verified using Luhn's algorythm. Credit cards are encrypted and only the last 4 numbers are displayed.</p>
-        <p>The app was thought out as if it was to be used by employees at a physical store to manage sells and inventory, as such sales can be logged as credit card purchases or cash purchases.</p>
-        <p>It is also posible to add products or the sales manualy.</p> 
-        <p>The app supports two roles.</p>
-        <ul>
-          <li>
-            <strong>Manager:</strong>
-            <p>Has full acces and can edit or delete sales and items from inventory either manually or by uploading a CSV file.</p>
-            <p>Can add or delete user as well as assing roles.</p>
+        </p>This app was created for a company I was working with. They used a system called PRISM as their CRM wich printed out RPT formatted files in order to manage collections.</p>
+        <p>Before I created the app it was necessary to print a report, clean it (since it contained a lot of unnecesary and often confussing information), format it into a comprehensible excel file, add information from previous weeks and then use it.  This was done at least once a week, took several hours and made it near imposible to stay up to date.</p>
+        <p>This app solved various problems in the collections process.</p>
+        <li>
+            <strong>Time efficiency:</strong>
+            <p>Printing, cleaning and formatting the file took hours. With the app it was only necessary to print the file and upload it, the back end takes care of the rest in seconds.</p>
             </li>
           <li>
-            <strong>Employee:</strong>
-            <p>Is only able to add sales and items to the inventory manually.</p></li>
+            <strong>Data persistency and consistency:</strong>
+            <p>If they had notes for any particular account from the old file they had to translate them into the new file every time they printed it, this not only added time but the posibility of human error, sometimes resulting in an account being called after they had already paid.</p>
+            <p>With the app, any accounts that had notes and were still outstanding will stay on the database, even after a new file is uploaded. Since the app doesn't take hours to have the information ready, it was is possible to upload a new updated file every day, making the process much more consistent.</p>
+          </li>
+          <li>
+            <strong>Insights and management:</strong>
+            <p>Previously a manager had to have a meeting every few weeks to get information about the total amount outstaning and which were the accounts that owed the most, if they were being paid off or if there were any complications.</p>
+            <p>The app has a metrics page, showing the 10 biggest outstanding accounts, their percentage in relationship with the total amount and the totals of all the accounts divided into how overdue they were.</p>
+          </li>
         </ul>
-        <p>The app keeps track of quantities on inventory and it will notify the user trough color coding if it is necessary to restock.</p>
-      </div>
+
+        
     </section>
      
 
